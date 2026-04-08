@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Hub</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <header>
+        <h1>Student Hub</h1>
+        <nav>
+            <a href="#notes">Notes</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#videos">Videos</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Welcome to Student Hub</h2>
+        <p>Your one-stop platform for learning, notes, and practice!</p>
+    </section>
+    <section id="notes">
+        <h2>Notes Section</h2>
+        <p>Download your study materials below:</p>
+
+        <ul>
+            <li><a href="https://youtu.be/tTomwopxKFE?si=cgkrvEsmKjqseEu1">Maths Notes</a></li>
+            <li><a href="https://youtu.be/AqRA4HAuk_M?si=qtxCGTVOwsOkJTSJ">Science Notes</a></li>
+            <li><a href="https://youtu.be/4ncLB3JPy_w?si=1ZTI32-g8r5et6wI">English Notes</a></li>
+        </ul>
+
+        <input type="file">
+        <button>Upload Notes</button>
+    </section>
+    <section id="quiz">
+    <h2>Quiz Section</h2>
+
+    <div class="question">
+        <p>1. What is 2 + 2?</p>
+        <button onclick="checkAnswer(this, '4')">3</button>
+        <button onclick="checkAnswer(this, '4')">4</button>
+        <button onclick="checkAnswer(this, '4')">5</button>
+        <p class="result"></p>
+    </div>
+
+    <div class="question">
+        <p>2. What is the capital of India?</p>
+        <button onclick="checkAnswer(this, 'New Delhi')">Mumbai</button>
+        <button onclick="checkAnswer(this, 'New Delhi')">Delhi</button>
+        <button onclick="checkAnswer(this, 'New Delhi')">New Delhi</button>
+        <p class="result"></p>
+    </div>
+
+    <div class="question">
+        <p>3. Which is a programming language?</p>
+        <button onclick="checkAnswer(this, 'JavaScript')">HTML</button>
+        <button onclick="checkAnswer(this, 'JavaScript')">JavaScript</button>
+        <button onclick="checkAnswer(this, 'JavaScript')">CSS</button>
+        <p class="result"></p>
+    </div>
+
+</section>
+
+        <p id="result"></p>
+    </section>
+    <section id="videos">
+        <h2>Video Lessons</h2>
+
+        <iframe width="300" height="200"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="Video Lesson">
+        </iframe>
+
+    </section>
+    <footer>
+        <p>© 2026 Student Hub | Learn Smart</p>
+    </footer>
+
+</body>
+</html>
